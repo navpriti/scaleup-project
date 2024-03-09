@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { Box } from '@mui/material';
+import Money from './pages/Money';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box className="relative h-[100vh] flex items-center justify-center w-[80%] md:w-[50%] xl-w-[50%] m-auto">
+      <Money/>
+    </Box>
+    
   );
 }
 
